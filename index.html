@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA 우주 탐사선 발전기</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Michroma&family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <link rel="stylesheet" href="myStyle.css" />
+</head>
+
+<body>
+  <main id="snapRoot" class="page-root">
+    
+
+    <!-- SECTION 1 -->
+    <section class="section hero" id="sec-1">
+      <div class="frame hero-frame">
+        <div class="title-block">
+              <img 
+                src="img/nasaLogo.png"  
+                class="nasaLogo">
+              <img 
+                src="img/title.png"  
+                class="titleImg">
+        </div>
+
+        <div class="earth-wrap" aria-hidden="true">
+          <div class="earth"></div>
+          <div class="earth-vignette"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section description" id="sec-2">
+      <div class="frame">
+        <div class="orange-title font-pretendard">
+          <div class="orange-text">우주 탐사선</div>
+          <div class="thin-line"></div>
+        </div>
+
+        <div class="desc-grid">
+          <div class="desc-text font-pretendard">
+            <p class="desc-strong">
+              우주 탐사선이란, 지구나 다른 천체를 탐사하기 위해<br />
+              우주로 쏘아 올린 관측도구를 말한다.
+            </p>
+            <p class="desc-sub">(예시 : 플라이바이 탐사선, 착륙선, 로버 등)</p>
+
+            <div class="desc-gap"></div>
+
+            <p class="desc-body">
+              NASA의 탐사선은 단순한 관측 장비를 넘어,<br />
+              시대마다 새로운 기술을 실험하고 확장해 온 기록이다.<br />
+              이 아카이브는 탐사선을 통해<br />
+              우주 기술이 어떻게 진화해 왔는지를 따라간다.
+            </p>
+          </div>
+
+            <div class="desc-image" aria-label="Image">
+              <div class="img-box">
+                <img src="img/roket.jpg" alt="">
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3 : TOC + INLINE DETAIL -->
+    <section class="section toc" id="sec-3">
+      <div class="frame toc-frame">
+        <header class="toc-header">
+          <div class="toc-topline"></div>
+        </header>
+
+        <div class="toc-list" id="tocList">
+
+          <!-- =========================
+               1) PIONEER 10
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="pioneer" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"> <img src="img/pioneerJupiter.png" alt="Pioneer 10 thumbnail"> </div>
+          
+          </div>
+            <div class="year font-mono">1972</div>
+            <div class="name font-header">PIONEER 10</div>
+            <div class="tags font-mono">
+              <span class="pill">flyby</span>
+              <span class="pill">jupiter</span>
+            </div>
+          </article>
+
+          <!-- ✅ 내용은 "바로 아래"에서 열림 -->
+          <div class="inline-detail" data-detail-for="pioneer" aria-hidden="true">
+            <!-- 1) 설명 패널 -->
+            <section class="detail-panel detail-desc">
+              <div id="detailBgPioneer" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-text">
+                  <p class="detail-kicker font-pretendard">“소행성대를 통과한 최초의 우주선”</p>
+                  <h2 class="detail-title font-header">PIONEER 10</h2>
+
+                  <div class="detail-metaLeft font-pretendard">
+                    <div class="detail-year font-mono">1972</div>
+                    <div class="detail-goal">목표: 목성 접근 및 플라이바이</div>
+                  </div>
+
+                  <!-- ✅ 문장도 HTML에서 직접 수정 -->
+                  <p class="detail-desc font-pretendard">
+                    Pioneer 10은 인류 최초로 태양계를 벗어나는 경로에 진입한 탐사선으로, 외행성 탐사의 문을 연 존재다. 목성의 방사선 벨트를 직접 통과하며 심우주 환경에서 기체가 견딜 수 있는 설계 기준을 확립했다. 또한 고감도 원거리 통신 시스템과 기본 카메라 기술을 통해 최초의 외행성 근접 사진을 지구로 전송했다.이 탐사선은 이후 모든 심우주 탐사의 기반이 된 설계 철학을 마련했다.
+                  </p>
+
+            </section>
+
+            <!-- 2) 갤러리 패널 -->
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <!-- ✅ 여기 박스 구성/개수/col class 전부 HTML에서 변경 -->
+                  <div class="gallery-grid">
+                    <!-- 예시: 3개 컬럼(각 col2=33.33% → 합 100) -->
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/pioneer1.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                        <div class="ph ph-half">
+                          <img src="img/pioneer2.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/pioneer3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ✅ 선은 "내용 끝" 아래 -->
+          <div class="row-line"></div>
+
+
+          <!-- =========================
+               2) VIKING
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="viking" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"><img src="img/vikingPic.png" alt=""></div></div>
+            <div class="year font-mono">1975</div>
+            <div class="name font-header">VIKING</div>
+            <div class="tags font-mono">
+              <span class="pill">lander</span>
+              <span class="pill">mars</span>
+            </div>
+          </article>
+
+          <div class="inline-detail" data-detail-for="viking" aria-hidden="true">
+            <section class="detail-panel detail-desc">
+              <div id="detailBgViking" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-textRight">
+                  <p class="detail-kicker font-pretendard">“화성에 처음으로 발을 디딘 인류의 탐사선.”</p>
+                  <h2 class="detail-title font-header">VIKING</h2>
+
+                  <div class="detail-metaRight font-pretendard">
+                    <div class="detail-year font-mono">1975</div>
+                    <div class="detail-goal">목표: 화성 착륙 및 표면 분석</div>
+                  </div>
+
+                  <p class="detail-desc font-pretendard">
+                    Viking은 인류 역사상 처음으로 다른 행성에 ‘연착륙’하는 데 성공한 탐사선으로, 화성 탐사의 전환점이다. 고도로 제어되는 착륙 엔진과 복잡한 생명 탐사 장비를 탑재하여 직접 토양을 분석하는 체계적 실험을 수행했다. 화성 표면 사진부터 기압·기온 등 환경 데이터까지 최초로 정밀하게 측정하며 과학적 기준을 제시했다. 이 임무는 이후 모든 화성 착륙선·로버의 기술적 기반(착륙 프로세스·분석 모듈)을 확고히 했다.
+                  </p>
+            </section>
+
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <div class="gallery-grid">
+                    <div class="col2">
+                      <div class="gallery-stack">
+                      <div class="ph ph-half">
+                        <img src="img/viking1.png" alt="">
+                      </div>
+                      <div class="ph ph-half">
+                        <img src="img/viking4.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/viking3.png" alt="">
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/viking2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="row-line"></div>
+
+
+          <!-- =========================
+               3) VOYAGER
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="voyager" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"><img src="img/voyagerRecord.png" alt=""></div></div>
+            <div class="year font-mono">1977</div>
+            <div class="name font-header">VOYAGER</div>
+            <div class="tags font-mono">
+              <span class="pill">flyby</span>
+              <span class="pill">interstellar</span>
+            </div>
+          </article>
+
+          <div class="inline-detail" data-detail-for="voyager" aria-hidden="true">
+            <section class="detail-panel detail-desc">
+              <div id="detailBgVoyager" aria-hidden="true"></div>
+
+
+              <div class="detail-frame">
+                <div class="detail-text">
+                  <p class="detail-kicker font-pretendard">“태양계를 떠난 최초의 인류 기계.”</p>
+                  <h2 class="detail-title font-header">VOYAGER</h2>
+
+                  <div class="detail-metaLeft font-pretendard">
+                    <div class="detail-year font-mono">1977</div>
+                    <div class="detail-goal">목표: 외행성 플라이바이 및 성간 공간 탐사</div>
+                  </div>
+
+                  <p class="detail-desc font-pretendard">
+                    Voyager 1은 중력도움 항법을 통해 다중 외행성을 연속 탐사한 최초의 탐사선으로, 우주 항법의 혁신을 이뤘다. 목성·토성의 고해상도 촬영, 복잡한 대기·자기권 분석 등 이전에는 상상할 수 없던 데이터를 제공했다. 발사 후 40년이 지난 지금도 성간 공간에서 신호를 보내고 있어, 인류와 우주의 ‘가장 먼 접점’을 유지하고 있다. 그 존재 자체가 인류 기술력의 상징이며, 이후 심우주 항해 개념의 모델이 되었다.
+                  </p>
+            </section>
+
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <div class="gallery-grid">
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/voyager2.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                        <div class="ph ph-half">
+                          <img src="img/voyager3.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/voyager4.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="row-line"></div>
+
+
+                    <!-- =========================
+               4)  Galileo
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="galileo" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"><img src="img/galileoJupiter.png" alt=""></div></div>
+            <div class="year font-mono">1989</div>
+            <div class="name font-header">GALILEO</div>
+            <div class="tags font-mono">
+              <span class="pill">orbiter</span>
+              <span class="pill">jupiter</span>
+            </div>
+          </article>
+
+          <!-- ✅ 내용은 "바로 아래"에서 열림 -->
+          <div class="inline-detail" data-detail-for="galileo" aria-hidden="true">
+            <!-- 1) 설명 패널 -->
+            <section class="detail-panel detail-desc shadeLeft">
+              <div id="detailBgGalileo" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-text">
+                  <p class="detail-kicker font-pretendard">“목성을 처음으로 궤도에서 탐사한 우주선.”</p>
+                  <h2 class="detail-title font-header">GALILEO</h2>
+
+                  <div class="detail-metaLeft font-pretendard">
+                    <div class="detail-year font-mono">1989</div>
+                    <div class="detail-goal">목표: 목성 접근 및 플라이바이</div>
+                  </div>
+
+                  <!-- ✅ 문장도 HTML에서 직접 수정 -->
+                  <p class="detail-desc font-pretendard">
+                  Galileo는 최초의 목성 궤도선으로, 거대 행성과 그 위성들의 환경을 장기간 관측할 수 있는 기술을 처음 구현했다. 목성의 극심한 방사선 환경을 버틸 수 있도록 설계된 고내구성 구조는 당시 기술적 한계를 크게 확장했다. 탑재된 Galileo 대기 프로브는 목성 대기 속으로 직접 진입해 최초의 실측 데이터를 확보했다. 이 임무는 유로파의 얼음 아래 바다 존재 가능성을 밝혀, 외계 생명 탐사의 새로운 방향을 열었다.</p>
+
+            </section>
+
+            <!-- 2) 갤러리 패널 -->
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <!-- ✅ 여기 박스 구성/개수/col class 전부 HTML에서 변경 -->
+                  <div class="gallery-grid">
+                    <!-- 예시: 3개 컬럼(각 col2=33.33% → 합 100) -->
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/galileo6.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="gallery-stack">
+                      <div class="ph ph-half">
+                        <img src="img/galileo1.png" alt="">
+                      </div>
+                      <div class="ph ph-half">
+                        <img src="img/galileo2.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/galileo5.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ✅ 선은 "내용 끝" 아래 -->
+          <div class="row-line"></div>
+
+          
+                    <!-- =========================
+               5)  Hubble Space Telescope
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="hubbleSpaceTelescope" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"> <img src="img/hubblePic.jpg" alt=""></div></div>
+            <div class="year font-mono">1990</div>
+            <div class="name font-header">Hubble Space Telescope</div>
+            <div class="tags font-mono">
+              <span class="pill">telescope</span>
+              <span class="pill">earth-orbit</span>
+            </div>
+          </article>
+
+          <!-- ✅ 내용은 "바로 아래"에서 열림 -->
+          <div class="inline-detail" data-detail-for="hubbleSpaceTelescope" aria-hidden="true">
+            <!-- 1) 설명 패널 -->
+            <section class="detail-panel detail-desc">
+              <div id="detailBgHST" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-textRight">
+                  <p class="detail-kicker font-pretendard">“우주의 모습을 처음으로 선명하게 보여준 눈.”</p>
+                  <h2 class="detail-title font-header">Hubble Space Telescope</h2>
+
+                  <div class="detail-metaRight font-pretendard">
+                    <div class="detail-year font-mono">1990</div>
+                    <div class="detail-goal">목표: 목성 접근 및 플라이바이</div>
+                  </div>
+
+                  <!-- ✅ 문장도 HTML에서 직접 수정 -->
+                  <p class="detail-desc font-pretendard">
+                  허블은 지구 대기의 왜곡 없이 우주를 관측할 수 있는 첫 광학 우주망원경으로, 천문학의 패러다임을 바꾸었다. 고정밀 반사경과 안정적인 자세 제어 기술로 은하·성운·초신성 등 우주의 거대 구조를 고해상도로 기록했다. 모듈식 설계 덕분에 우주에서 직접 수리가 가능해 인류 최초로 ‘기계의 장기 우주 운용’을 입증했다. 허블이 촬영한 이미지들은 대중 과학 이해도와 우주 연구 수준을 동시에 끌어올린 역사적 자료가 되었다.</p>
+
+            </section>
+
+            <!-- 2) 갤러리 패널 -->
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <!-- ✅ 여기 박스 구성/개수/col class 전부 HTML에서 변경 -->
+                  <div class="gallery-grid">
+                    <!-- 예시: 3개 컬럼(각 col2=33.33% → 합 100) -->
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/Hubble2.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="gallery-stack">
+                      <div class="ph ph-half">
+                        <img src="img/Hubble1.png" alt="">
+                      </div>
+                      <div class="ph ph-half">
+                        <img src="img/Hubble3.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/voyager4.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ✅ 선은 "내용 끝" 아래 -->
+          <div class="row-line"></div>
+
+          
+                    <!-- =========================
+               6)  spirit
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="spirit" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"><img src="img/spiritPic.jpg" alt=""></div></div>
+            <div class="year font-mono">2003</div>
+            <div class="name font-header">SPIRIT</div>
+            <div class="tags font-mono">
+              <span class="pill">rover</span>
+              <span class="pill">mars</span>
+            </div>
+          </article>
+
+          <!-- ✅ 내용은 "바로 아래"에서 열림 -->
+          <div class="inline-detail" data-detail-for="spirit" aria-hidden="true">
+            <!-- 1) 설명 패널 -->
+            <section class="detail-panel detail-desc">
+              <div id="detailBgSpirit" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-text">
+                  <p class="detail-kicker font-pretendard">“화성에서 ‘걷는 탐사’를 시작한 개척자 로버.”</p>
+                  <h2 class="detail-title font-header">SPIRIT</h2>
+
+                  <div class="detail-metaLeft font-pretendard">
+                    <div class="detail-year font-mono">2003</div>
+                    <div class="detail-goal">목표: 목성 접근 및 플라이바이</div>
+                  </div>
+
+                  <!-- ✅ 문장도 HTML에서 직접 수정 -->
+                  <p class="detail-desc font-pretendard">
+                  Spirit는 화성 표면을 장거리 자율 이동하며 지질 변화를 분석한 최초의 고기동 로버다. 태양광 기반 시스템으로 설계되었지만 예상 수명을 크게 넘겨 Opportunity는 15년 동안 운용되었다. 이들은 충적층, 물흐름 흔적 등 화성의 과거 환경을 실제 현장에서 검증한 결정적 증거를 제공했다. 로버 중심의 탐사 방식이 본격 도입되며, ‘현장 기반 지질학’이라는 개념을 우주에 성공적으로 적용했다.</p>
+
+            </section>
+
+            <!-- 2) 갤러리 패널 -->
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <!-- ✅ 여기 박스 구성/개수/col class 전부 HTML에서 변경 -->
+                  <div class="gallery-grid">
+                    <!-- 예시: 3개 컬럼(각 col2=33.33% → 합 100) -->
+                    <div class="col2">
+                      <div class="ph ph-tall">
+                        <img src="img/spirit2.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="gallery-stack">
+                      <div class="ph ph-half">
+                        <img src="img/spirit1.png" alt="">
+                      </div>
+                      <div class="ph ph-half">
+                        <img src="img/spirit3.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col2">
+                      <div class="gallery-stack">
+                      <div class="ph ph-half">
+                        <img src="img/spirit4.png" alt="">
+                      </div>
+                      <div class="ph ph-half">
+                        <img src="img/spirit5.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ✅ 선은 "내용 끝" 아래 -->
+          <div class="row-line"></div>
+
+          
+                    <!-- =========================
+               7)  Curiosity
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="curiosity" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"><img src="img/curiosityPic.png" alt=""></div></div>
+            <div class="year font-mono">2011</div>
+            <div class="name font-header">CURIOSITY</div>
+            <div class="tags font-mono">
+              <span class="pill">rober</span>
+              <span class="pill">mars</span>
+            </div>
+          </article>
+
+          <!-- ✅ 내용은 "바로 아래"에서 열림 -->
+          <div class="inline-detail" data-detail-for="curiosity" aria-hidden="true">
+            <!-- 1) 설명 패널 -->
+            <section class="detail-panel detail-desc">
+              <div id="detailBgCuriosity" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-text">
+                  <p class="detail-kicker font-pretendard">“화성에서 직접 분석·실험이 가능한 최초의 로봇 과학자.”</p>
+                  <h2 class="detail-title font-header">CURIOSITY</h2>
+
+                  <div class="detail-metaLeft font-pretendard">
+                    <div class="detail-year font-mono">2011</div>
+                    <div class="detail-goal">목표: 목성 접근 및 플라이바이</div>
+                  </div>
+
+                  <!-- ✅ 문장도 HTML에서 직접 수정 -->
+                  <p class="detail-desc font-pretendard">
+                  Curiosity는 MMRTG 핵동력을 통해 한계 없는 장기 탐사가 가능해진 최초의 본격 과학 로버다. 탑재된 SAM·CheMin 분석 장비는 시료를 직접 채취·가열·이온화하여 화성 토양의 성분을 실험室 수준으로 분석한다. 정밀 드릴링, 자율주행 알고리즘, HD 카메라 등 고성능 장비가 결합되어 이동형 연구소 역할을 수행했다. 이 로버는 화성에서 ‘과학적 실험의 즉시 수행’이라는 새로운 탐사 방식을 열었다.</p>
+
+            </section>
+
+            <!-- 2) 갤러리 패널 -->
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <!-- ✅ 여기 박스 구성/개수/col class 전부 HTML에서 변경 -->
+                  <div class="gallery-grid">
+                    <!-- 예시: 3개 컬럼(각 col2=33.33% → 합 100) -->
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/curiosity1.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/curiosity2.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/curiosity3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ✅ 선은 "내용 끝" 아래 -->
+          <div class="row-line"></div>
+
+
+            
+          
+                    <!-- =========================
+               8)  JWST
+               ========================= -->
+
+          <article class="toc-row toc-item" data-probe="JWST" tabindex="0" role="button" aria-expanded="false">
+            <div class="thumb"><div class="thumb-box"><img src="img/jwstPic.png" alt=""></div></div>
+            <div class="year font-mono">2021</div>
+            <div class="name font-header">JWST</div>
+            <div class="tags font-mono">
+              <span class="pill">telescope</span>
+              <span class="pill">infrared   </span>
+            </div>
+          </article>
+
+          <!-- ✅ 내용은 "바로 아래"에서 열림 -->
+          <div class="inline-detail" data-detail-for="JWST" aria-hidden="true">
+            <!-- 1) 설명 패널 -->
+            <section class="detail-panel detail-desc">
+              <div id="detailBgJWST" aria-hidden="true"></div>
+
+              <div class="detail-frame">
+                <div class="detail-textRight">
+                  <p class="detail-kicker font-pretendard">“우주 최초의 별빛을 포착한 적외선 거대망원경.”</p>
+                  <h2 class="detail-title font-header">JWST</h2>
+
+                  <div class="detail-metaRight font-pretendard">
+                    <div class="detail-year font-mono">2021</div>
+                    <div class="detail-goal">목표: 목성 접근 및 플라이바이</div>
+                  </div>
+
+                  <!-- ✅ 문장도 HTML에서 직접 수정 -->
+                  <p class="detail-desc font-pretendard">
+                 JWST는 6.5m의 접이식 금박 주경과 5겹 태양 차폐막을 갖춘 인류 최정상의 적외선 우주망원경이다. 심적외선 영역에서 우주 초기의 빛을 포착할 수 있어 빅뱅 직후 형성된 은하까지 관측이 가능하다. L2 안정 지점에서 초저온 상태를 유지하며 전례 없는 정밀도로 우주의 기원과 진화를 연구한다. 허블 이후 30년 만에 등장한 ‘새로운 눈’으로, 우주 천문학의 기준을 다시 세운 결정적 기체다.</p>
+            </section>
+
+            <!-- 2) 갤러리 패널 -->
+            <section class="detail-panel detail-gallery">
+              <div class="detail-frame">
+                <div class="gallery-wrap">
+                  <!-- ✅ 여기 박스 구성/개수/col class 전부 HTML에서 변경 -->
+                  <div class="gallery-grid">
+                    <!-- 예시: 3개 컬럼(각 col2=33.33% → 합 100) -->
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/james1.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/james2.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col2">
+                      <div class="ph ph-half">
+                        <img src="img/james3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- ✅ 선은 "내용 끝" 아래 -->
+          <div class="row-line"></div>
+
+          <footer class="toc-footer font-mono">
+            © 2024 NASA Space Exploration History
+          </footer>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="myScript.js"></script>
+</body>
+</html>
